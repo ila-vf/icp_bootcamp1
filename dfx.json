@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "icp_bootcamp1_backend": {
+      "main": "src/icp_bootcamp1_backend/main.mo",
+      "type": "motoko"
+    },
+    "icp_bootcamp1_frontend": {
+      "dependencies": [
+        "icp_bootcamp1_backend"
+      ],
+      "source": [
+        "src/icp_bootcamp1_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icp_bootcamp1_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
